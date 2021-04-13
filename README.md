@@ -1,2 +1,2 @@
-# Collect
-Web application to display collections
+# new_bake
+New Django foundation
