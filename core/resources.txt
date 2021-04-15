@@ -1,0 +1,4 @@
+locations to update resources
+countries: http://www.countries-list.info/Download-List
+countries and currency:
+https://datahub.io/core/currency-codes#resource-codes-all

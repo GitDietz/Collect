@@ -11,8 +11,8 @@ from django.db import DatabaseError
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, HttpResponseRedirect, Http404, redirect
 
-from .forms import CategoryForm, ItemForm, MerchantForm, ShopGroupForm, UsersGroupsForm, NewGroupCreateForm, SupportLogForm
-from .models import Item, Merchant, ShopGroup, Support
+# from .forms import CategoryForm, ItemForm, MerchantForm, ShopGroupForm, UsersGroupsForm, NewGroupCreateForm, SupportLogForm
+# from .models import Item, Merchant, ShopGroup, Support
 from .utils import get_object_id, in_post
 
 
