@@ -13,7 +13,7 @@ urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
     path("list/", include("the_list.urls", namespace="list")),
-    
+    path("core/", include("core.urls", namespace="core")),
     # User management
     path("users/", include("weblist.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),

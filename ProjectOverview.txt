@@ -1,0 +1,10 @@
+This project is a concept of providing a site that users can record snd display their collections
+
+for instance a train collection
+Potential scope:
+include pictures of each item
+Pricing and shopping facility
+Gallery displays of collection same as someone would do in a gallery
+
+
+

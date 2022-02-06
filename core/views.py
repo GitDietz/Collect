@@ -1,13 +1,20 @@
 import logging
+
+from django.conf import settings
 from django.contrib import messages
-from django.shortcuts import render, redirect, HttpResponseRedirect, reverse
+from django.contrib.auth.decorators import login_required
+from django.urls import reverse
+from django.db import DatabaseError
+from django.db.models import Q
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect, Http404, redirect
 
 from .models import Country
+
 
 def upload_csv(request):
     data = {}
     if "GET" == request.method:
-        return render(request, "core/upload_csv.html", data)
+        return render(request, "upload_csv.html", data)
     # if not GET, then proceed
     try:
         csv_file = request.FILES["csv_file"]
@@ -39,3 +46,10 @@ def upload_csv(request):
         messages.error(request, "Unable to upload file. "+repr(e))
 
     return HttpResponseRedirect(reverse("myapp:upload_csv"))
+
+
+def admin(request):
+    template = 'base_admin.html'
+    context = {
+    }
+    return render(request, template, context)
